@@ -51,6 +51,6 @@ def graph_chart(prices, tx_volumes, dates):
     return True
 
 prices, dates = get_prices()
-tx_volumes, transformed = get_tx_volumes()
+tx_volumes, transformed = get_tx_volumes(SMOOTH_FACTOR)
 # graph_chart(prices, tx_volumes, dates)
 graph_chart(prices, transformed, dates)
